@@ -163,6 +163,9 @@ public class EarthquakeActivity extends AppCompatActivity
         if (earthquakes != null && !earthquakes.isEmpty()) {
             mAdapter.addAll(earthquakes);
         }
+        ListView earthquakeListView = (ListView) findViewById(R.id.list);
+
+        earthquakeListView.setEmptyView(findViewById(R.id.empty_view));
     }
 
     @Override
